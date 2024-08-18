@@ -1,6 +1,10 @@
-import Cart from './addcart';
+import Form from './formwidget';
+import ChangeCardSit from './cardchange';
+
 
 window.addEventListener('DOMContentLoaded', () => {
-    new Cart();
+    const form = new Form();
+    form.init();
   });
 
+ 
