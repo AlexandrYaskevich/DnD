@@ -1,10 +1,10 @@
-import Form from './formwidget';
-import ChangeCardSit from './cardchange';
+import DnD from './DnD';
+import Trello from './Trello';
 
+const trello = new Trello();
 
-window.addEventListener('DOMContentLoaded', () => {
-    const form = new Form();
-    form.init();
-  });
-
- 
+trello.bindToDOM(document.querySelector('.container'));
+trello.drawUI();
+trello.toAppoint();
+const dnd = new DnD(trello);
+dnd.toAppoint();
